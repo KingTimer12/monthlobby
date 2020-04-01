@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Diogo/OneDrive/Ambiente de Trabalho/Tudo/Server/spigot.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diogo/OneDrive/Ambiente de Trabalho/Commons-1.0.2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diogo/OneDrive/Ambiente de Trabalho/MonthCommons.jar"/>
+	<classpathentry kind="lib" path="D:/Server&apos;s/Default server 1.8/plugins/Commons-1.0.2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="D:/Server&apos;s/Default server 1.8/plugins/MonthCommons.jar" sourcepath="/MonthCommons"/>
+	<classpathentry kind="lib" path="D:/Server&apos;s/Default server 1.8/Spigot.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
