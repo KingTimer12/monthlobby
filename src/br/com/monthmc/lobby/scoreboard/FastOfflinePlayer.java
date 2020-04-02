@@ -10,12 +10,11 @@ import org.bukkit.entity.Player;
 import com.google.common.base.Charsets;
 
 public class FastOfflinePlayer implements OfflinePlayer {
-	
+
 	/*
-	 * Create by **
-	 * For MonthMC
+	 * Create by ** For MonthMC
 	 */
-	
+
 	private final String playerName;
 
 	public FastOfflinePlayer(String playerName) {

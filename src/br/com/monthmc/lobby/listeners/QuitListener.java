@@ -5,12 +5,11 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 public class QuitListener implements Listener {
-	
+
 	/*
-	 * Create by KingoZ_
-	 * For MonthMC
+	 * Create by KingoZ_ For MonthMC
 	 */
-	
+
 	@EventHandler
 	public void onQuit(PlayerQuitEvent event) {
 		event.setQuitMessage(null);

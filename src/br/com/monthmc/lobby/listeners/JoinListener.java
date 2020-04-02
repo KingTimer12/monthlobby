@@ -12,21 +12,19 @@ import br.com.monthmc.commons.bukkit.api.item.ItemBuilder;
 import br.com.monthmc.lobby.scoreboard.Scoreboarding;
 
 public class JoinListener implements Listener {
-	
+
 	/*
-	 * Create by Sombraa
-	 * Edit by KingoZ_
-	 * For MonthMC
+	 * Create by Sombraa Edit by KingoZ_ For MonthMC
 	 */
-	
+
 	@EventHandler
 	public void onJoin(PlayerJoinEvent e) {
 		e.setJoinMessage(null);
 		Player p = e.getPlayer();
 		p.getInventory().clear();
-		
+
 		Scoreboarding.sendScoreboard(p);
-		
+
 		p.getInventory().setItem(2, new ItemBuilder(Material.EMERALD_ORE).name("§aPerfil").build());
 		p.getInventory().setItem(4, new ItemBuilder(Material.COMPASS).name("§aServidores").build());
 		p.getInventory().setItem(6, new ItemBuilder(Material.CHEST).name("§aCosméticos").build());

@@ -14,12 +14,11 @@ import br.com.monthmc.commons.manager.data.clan.Clan;
 import br.com.monthmc.commons.manager.network.ServerType;
 
 public class Scoreboarding {
-	
+
 	/*
-	 * Create by KingoZ_
-	 * For MonthMC
+	 * Create by KingoZ_ For MonthMC
 	 */
-	
+
 	public static void sendScoreboard(Player player) {
 		NetworkManager network = CoreBukkit.getInstance().getNetworkManager();
 		BukkitPlayer bP = BukkitPlayer.getPlayer(player);
@@ -33,14 +32,14 @@ public class Scoreboarding {
 		makeLine("§fClã: §c", "clan", (clan == null ? "Nenhum" : clan.getName()), null, scoreboard, 5);
 		makeLine("§2", "space2", null, null, scoreboard, 4);
 		makeLine("§fLobby: ", "lobby", "§a#1", null, scoreboard, 3);
-		makeLine("§fJogadores: §b", "players", network.getOnlineCount(ServerType.NETWORK)+"", null, scoreboard, 2);
+		makeLine("§fJogadores: §b", "players", network.getOnlineCount(ServerType.NETWORK) + "", null, scoreboard, 2);
 		makeLine("§1", "space1", null, null, scoreboard, 1);
 		makeLine("mc", "site", ".com.br", "     §emonth", scoreboard, 0);
 		CoreBukkit.getInstance().getTagManager().update(player);
 		player.setScoreboard(scoreboard);
 		return;
 	}
-	
+
 	@SuppressWarnings("deprecation")
 	public static void makeLine(String string, String team_name, String suffix, String prefix, Scoreboard scoreboard,
 			int integer) {
@@ -52,7 +51,7 @@ public class Scoreboarding {
 		}
 		obj.getScore(getFastOfflinePlayer(string, team_name, suffix, prefix, scoreboard));
 	}
-	
+
 	@SuppressWarnings("deprecation")
 	public static FastOfflinePlayer getFastOfflinePlayer(String string, String team_name, String suffix, String preffix,
 			Scoreboard scoreboard) {
@@ -74,5 +73,5 @@ public class Scoreboarding {
 		}
 		return fastOffline;
 	}
-	
+
 }
